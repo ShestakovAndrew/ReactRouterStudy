@@ -10,9 +10,18 @@ export const Navbar = () => {
 	}
 
 	return (
-		<div>
-			<NavLink style={navLinkStyles} to='/'>Home</NavLink>
-			<NavLink style={navLinkStyles} to='about'>About</NavLink>
-		</div>
+		<nav className='primary-nav'>
+			<NavLink style={navLinkStyles} to='/'>
+				Home
+			</NavLink>
+
+			<NavLink style={navLinkStyles} to='/about'>
+				About
+			</NavLink>
+
+			<NavLink style={navLinkStyles} to='/products'>
+				Products
+			</NavLink>
+		</nav>
 	)
 }
